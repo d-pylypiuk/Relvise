@@ -499,3 +499,87 @@ body{
    background: var(--title-color);
    position: relative;
 }
+
+// ---------Contacts-------------
+.contacts{
+   padding:100px 0px 150px 0px;
+   background: var(--bg-color);
+}
+.contacts__container{}
+.contacts__title{}
+.contacts__subtitle{}
+.contacts__row{
+   padding-top: 85px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.contacts__items{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex-grow: 1;
+   padding: 50px 0px;
+   background:#fff;
+}
+// ----contacts hover------
+// -------------------------
+.contacts__items:hover{
+   padding:70px 0px;
+   background:var(--bg-footer);
+}
+.contacts__items:hover > .contacts__items_icons{
+   fill:#fff;
+}
+.contacts__items:hover > .contacts__items_link{
+   color: #fff;
+}
+.contacts__items:hover > .contacts__items_title{
+   color: #fff;
+}
+.contacts__items:hover > .contacts__items_btn{
+   border-color: #fff;
+   color: #fff;
+}
+// ----------------------------
+// --------------------------
+.contacts__items_icons{
+   width: 72px;
+   height: 72px;
+   fill: var(--icons-color);
+   margin-bottom: 22px;
+}
+.contacts__items_link{
+   color: var(--title-color);
+   margin-bottom: 15px;
+   font-size: 16px;
+   font-weight: 600;
+}
+.contacts__items_title{
+   margin:15px 0px 22px 0px;
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--title-color);
+}
+.contacts__items_btn{
+   transition: all .3s ease-in-out 0s;
+   width:180px;
+   height: 45px;
+   font-size: 14px;
+   font-weight: 400;
+   background: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   color:var(--color-active);
+   box-sizing: border-box;
+   cursor: pointer;
+   border:1px solid var(--color-active);
+   border-radius: 4px;
+}
+.contacts__items_btn:hover{
+   opacity: .7;
+}
