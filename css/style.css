@@ -85,6 +85,10 @@ body {
   background: var(--bg-color);
 }
 
+.wrap {
+  overflow: hidden;
+}
+
 ._container {
   width: 1046px;
   margin: 0px auto;
@@ -1016,7 +1020,11 @@ body {
     height: 700px;
     background-repeat: no-repeat;
   }
+  .header__info {
+    width: 100%;
+  }
   .header__title {
+    width: 100%;
     padding-left: 10px;
     font-size: 300%;
     line-height: 100%;
